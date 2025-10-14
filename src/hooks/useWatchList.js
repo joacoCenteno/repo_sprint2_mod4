@@ -21,7 +21,7 @@ const useWacthList = () =>{
     }, []);
 
 
-    return {watchlist, addToWatchList, removeFromWatchList, useEffect}
+    return {watchlist, addToWatchList, removeFromWatchList}
 }
 
 
