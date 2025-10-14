@@ -6,7 +6,7 @@ const MarioCard = ({game, addToWatchList, isFavorite}) => {
 
   return (
     <>
-        <div className="relative bg-[rgb(252,252,252)] border-[3px] border-black w-80 h-50 rounded-none shadow-[6px_0px_0px_-2px_rgba(0,0,0,0.8)]">
+        <div className="relative bg-[rgb(252,252,252)] border-[3px] border-black w-70 md:80 h-50 rounded-none shadow-[6px_0px_0px_-2px_rgba(0,0,0,0.8)] mt-3 sm:mt-0">
 
         <div className="absolute top-1 left-1 w-4 h-4 bg-cyan-200 border-[2px] border-black rounded-sm "></div>
         <div className="absolute top-1 right-1 w-4 h-4 bg-cyan-200 border-[2px] border-black rounded-sm z-1"></div>
@@ -18,7 +18,7 @@ const MarioCard = ({game, addToWatchList, isFavorite}) => {
         <div className="flex flex-col items-center justify-center h-full text-black relative text-xs">
           
           <div className='flex justify-center'>
-            <img src={img} alt="No cargo" className='w-60'/>
+            <img src={img} alt="No cargo" className='w-55'/>
            
           </div>
           <div className='flex items-center justify-center gap-2 mt-3'>
