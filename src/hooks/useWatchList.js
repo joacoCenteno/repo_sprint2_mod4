@@ -14,6 +14,11 @@ const useWacthList = () =>{
       localStorage.setItem("watchlist", JSON.stringify(updatedList))
     }
 
+    
+    const removeAllWatchList = () =>{
+      setWatchList([]);
+      localStorage.clear();
+    }
   
     useEffect(() => {
         const savedWatchList = JSON.parse(localStorage.getItem("watchlist")) || [];
@@ -21,7 +26,7 @@ const useWacthList = () =>{
     }, []);
 
 
-    return {watchlist, addToWatchList, removeFromWatchList}
+    return {watchlist, addToWatchList, removeFromWatchList, removeAllWatchList}
 }
 
 

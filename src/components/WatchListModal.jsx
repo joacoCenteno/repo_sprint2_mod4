@@ -1,10 +1,11 @@
 import React from 'react'
 
-const WatchListModal = ({watchlist,onClose,removeFromWatchList}) => {
+const WatchListModal = ({watchlist,onClose,removeFromWatchList, removeAllWatchList}) => {
   return (
     <>
     <div className='absolute top-0 left-0 w-full h-full z-2 overflow-y-auto  bg-black/80  overflow-hidden py-3  px-5'>
-        <i className="bi bi-x-circle-fill text-white cursor-pointer text-3xl" onClick={()=> onClose()}></i>
+        <i className="bi bi-x-circle-fill text-white cursor-pointer text-xl" onClick={()=> onClose()}></i>
+        <button onClick={removeAllWatchList} className=' bg-red-400 text-white ml-5 px-2 py-1 mb-1 rounded cursor-pointer'>Delete All</button>
         <br />
         {watchlist.length == 0 ? <p className='text-center text-white font-medium text-lg pb-3'>SIN FAVORITOS <i className="bi bi-emoji-frown-fill text-2xl"></i></p> : 
           <div className='py-2 flex flex-col items-center gap-4'>
